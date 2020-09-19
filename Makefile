@@ -12,7 +12,7 @@ options:
 	@echo dmenu build options:
 	@echo "CFLAGS   = $(CFLAGS)"
 	@echo "LDFLAGS  = $(LDFLAGS)"
-	@echo "CC       = $(CC)"
+	@echo "CC       = $(GCC)"
 
 .c.o:
 	$(CC) -c $(CFLAGS) $<
