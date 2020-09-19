@@ -16,7 +16,7 @@ the /usr/local namespace by default).
 Afterwards enter the following command to build and install dmenu
 (if necessary as root):
 
-    make clean install
+   ```make clean install```
 
 
 ## Running dmenu
