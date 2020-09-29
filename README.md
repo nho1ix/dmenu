@@ -1,4 +1,4 @@
-# dmenu - dynamic menu
+# dmenu - dynamic menu <img alt="Visits" align="right" src="https://badges.pufler.dev/visits/nho1ix/dmenu"/> 
 
 dmenu is an efficient dynamic menu for X.
 
