@@ -716,6 +716,9 @@ usage(void)
 	      "             [-h height]\n"
 	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
 	exit(1);
+
+	// die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+	//     "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
 }
 
 int
