@@ -3,7 +3,7 @@
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static const char *fonts[] = { "Overpass:style=Regular:size=13:antialias=true:autohint=true",
+static const char *fonts[] = { "Overpass:style=Regular:size=14:antialias=true:autohint=true",
                                "font-awesome:pixelsize=10:antialias=true:autohint=true",
                                "NotoColorEmoji:pixelsize=17" };
 
@@ -17,7 +17,8 @@ static const char *colors[SchemeLast][2] = {
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines = 0;
-static unsigned int lineheight = 25;         /* -h option; minimum height of a menu line     */
+static unsigned int lineheight = 34;         /* -h option; minimum height of a menu line     */
+static unsigned int min_lineheight = 8;
 
 /*
  * Characters not considered part of a word while deleting words
