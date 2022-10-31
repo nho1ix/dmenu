@@ -7,8 +7,14 @@ static const char *fonts[] = { "Overpass:style=Regular:size=14:antialias=true:au
                                "font-awesome:pixelsize=10:antialias=true:autohint=true",
                                "NotoColorEmoji:pixelsize=17" };
 
-static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static const char *colors[SchemeLast][2] = {
+
+static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+
+static char normfgcolor[] = "#bbbbbb";
+static char normbgcolor[] = "#222222";
+static char selfgcolor[]  = "#eeeeee";
+static char selbgcolor[]  = "#005577";
+static char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#bbbbbb", "#000000" },
 //	[SchemeSel] = { "#eeeeee", "#005577" },
@@ -26,3 +32,15 @@ static unsigned int min_lineheight = 8;
  */
 
 static const char worddelimiters[] = " ";
+
+/*
+ * Xresources preferences to load at startup
+ */
+ResourcePref resources[] = {
+	// { "font",        STRING, &font },
+	{ "normfgcolor", STRING, &normfgcolor },
+	{ "normbgcolor", STRING, &normbgcolor },
+	{ "selfgcolor",  STRING, &selfgcolor },
+	{ "selbgcolor",  STRING, &selbgcolor },
+	{ "prompt",      STRING, &prompt },
+};
