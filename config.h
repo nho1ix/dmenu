@@ -16,9 +16,9 @@ static char selfgcolor[]  = "#eeeeee";
 static char selbgcolor[]  = "#005577";
 static char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#000000" },
+	[SchemeNorm] = { normfgcolor, normbgcolor },
 //	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeSel] = { "#FFFFFF", "#414350" },
+	[SchemeSel] = { selfgcolor, selbgcolor },
 	[SchemeOut] = { "#bbbbbb", "#000000" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
@@ -38,9 +38,9 @@ static const char worddelimiters[] = " ";
  */
 ResourcePref resources[] = {
 	// { "font",        STRING, &font },
-	{ "normfgcolor", STRING, &normfgcolor },
-	{ "normbgcolor", STRING, &normbgcolor },
-	{ "selfgcolor",  STRING, &selfgcolor },
-	{ "selbgcolor",  STRING, &selbgcolor },
+	{ "color17",		STRING,	&normbgcolor },
+	{ "color18",		STRING,	&normfgcolor },
+	{ "color18",		STRING,	&selfgcolor },
+	{ "color20",		STRING,	&selbgcolor },
 	{ "prompt",      STRING, &prompt },
 };
