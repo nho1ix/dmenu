@@ -10,12 +10,12 @@ all: options dmenu stest
 
 options:
 	@echo dmenu build options:
-	@echo "CFLAGS   = -0fast $(filter-out -Os,$(CFLAGS))"
+	@echo "CFLAGS   = -O2 $(filter-out -Os,$(CFLAGS))"
 	@echo "LDFLAGS  = $(LDFLAGS)"
 	@echo "CC       = $(GCC)"
 
 .c.o:
-	$(CC) -c -0fast $(filter-out -Os,$(CFLAGS)) $<
+	$(CC) -c -O2 $(filter-out -Os,$(CFLAGS)) $<
 
 config.h:
 	cp config.def.h $@
