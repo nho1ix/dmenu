@@ -5,7 +5,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = { "Overpass:style=Regular:size=11:antialias=true:autohint=true",
                                "font-awesome:pixelsize=10:antialias=true:autohint=true",
-                               "NotoColorEmoji:pixelsize=17" };
+                               "NotoColorEmoji:pixelsize=44" };
 
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
