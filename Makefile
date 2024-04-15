@@ -15,7 +15,7 @@ options:
 	@echo "CC       = $(GCC)"
 
 .c.o:
-	$(CC) -c -Ofast $(filter-out -Os,$(CFLAGS)) $<
+	$(CC) -c -Ofast -march=native $(filter-out -Os,$(CFLAGS)) $<
 
 config.h:
 	cp config.def.h $@
