@@ -15,7 +15,7 @@ static char normbgcolor[] = "#261e0d";
 static char selfgcolor[]  = "#eee5d8";
 static char selbgcolor[]  = "#6d8d39";
 // static char selbgcolor[]  = "#414350";
-static char *colors[SchemeLast][2] = {
+static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { normfgcolor, normbgcolor },
 //	[SchemeSel] = { "#eeeeee", "#005577" },
