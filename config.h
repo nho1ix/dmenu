@@ -3,17 +3,17 @@
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static const char *fonts[] = { "Overpass:style=Regular:size=13:antialias=true:autohint=true",
+static const char *fonts[] = { "Overpass:style=Regular:size=12:antialias=true:autohint=true",
                                "font-awesome:pixelsize=10:antialias=true:autohint=true",
                                "NotoColorEmoji:pixelsize=44" };
 
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
-static char normfgcolor[] = "#bbbbbb";
-static char normbgcolor[] = "#222222";
-static char selfgcolor[]  = "#eeeeee";
-static char selbgcolor[]  = "#b55617";
+static char normfgcolor[] = "#eee5d8";
+static char normbgcolor[] = "#261e0d";
+static char selfgcolor[]  = "#eee5d8";
+static char selbgcolor[]  = "#6d8d39";
 // static char selbgcolor[]  = "#414350";
 static char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
